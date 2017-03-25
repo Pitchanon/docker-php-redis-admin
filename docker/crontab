@@ -1,0 +1,2 @@
+# Cron tab for php-redis-admin to collect redis statistics
+* * * * * root cd /var/www/html/php-redis-admin && /usr/local/bin/php index.php cron/index
