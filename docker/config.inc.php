@@ -15,49 +15,12 @@ $config = array(
       'auth' => '123456' // Warning: The password is sent in plain-text to the Redis server.
     ),
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*array(
-),*/
-
-
-
-
-
-
-
+t' => 'localhost',
+      'port' => 6380
+    ),*/
 /*array(
-al db 2',
+'name'      => 'local db 2',
       'host'      => 'localhost',
       'port'      => 6379,
       'db'        => 1,             // Optional database number, see http://redis.io/commands/select
@@ -70,8 +33,8 @@ al db 2',
       'scansize'  => 1000           // How many entries to fetch using each SCAN command for this server (default uses config default).
     ),*/
   ),
-  'seperator' => ':',
-  // Uncomment to show less information and make phpRedisAdmin fire less commands to the Redis server. Recommended for a really busy Redis server.
+'seperator' => ':',
+// Uncomment to show less information and make phpRedisAdmin fire less commands to the Redis server. Recommended for a really busy Redis server.
   //'faster' => true,
   // Uncomment to enable HTTP authentication
   'login' => array(
@@ -82,7 +45,7 @@ al db 2',
     ),
     'guest' => array(
       'password' => '123456',
-      'servers'  => array(1) // Optional list of servers this user can access.
+      'servers'  => array(0) // Optional list of servers this user can access.
     )
   ),
   /*'serialization' => array(
