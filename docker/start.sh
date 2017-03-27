@@ -1,14 +1,16 @@
 #!/bin/bash
 
 # Run gearman job server
-gearmand -d
+# gearmand -d
 # Run cron daemon
-cron
+# cron
 # Run gearman work
-php index.php gearman/index &
+# php index.php gearman/index &
 # Start web server
-apache2-foreground &
+# apache2-foreground &
 
-trap "pkill gearmand && pkill -WINCH apache2" TERM
+# trap "pkill gearmand && pkill -WINCH apache2" TERM
 
-wait
+# wait
+
+apache2-foreground
