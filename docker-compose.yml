@@ -3,6 +3,7 @@ version: '2'
 services:
     php-redis-admin:
         build: .
+        restart: always
         volumes: 
             - ./php-redis-admin:/var/www/html/php-redis-admin
             - ./docker/config.inc.php:/var/www/html/php-redis-admin/includes/config.inc.php
@@ -16,6 +17,7 @@ services:
             - redis
     redis:
         image: redis:alpine
+        restart: always
         volumes:
             - ./docker/redis.conf:/usr/local/etc/redis/redis.conf
         command: redis-server /usr/local/etc/redis/redis.conf
