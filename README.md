@@ -1,5 +1,12 @@
 # Docker php-Redis-Admin
 
+## Clone php redis admin
+```
+$ sh phpRedisAdmin.sh
+```
+
+ref: [https://github.com/erikdubbelboer/phpRedisAdmin](https://github.com/erikdubbelboer/phpRedisAdmin)
+
 ## Run
 ```
 $ docker-compose up -d
